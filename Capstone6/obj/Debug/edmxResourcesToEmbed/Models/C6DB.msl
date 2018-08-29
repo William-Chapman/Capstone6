@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="week6capstone_tasklistModelStoreContainer" CdmEntityContainer="week6capstone_tasklistEntities">
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="week6capstone_tasklistModel.task">
+        <MappingFragment StoreEntitySet="task">
+          <ScalarProperty Name="taskid" ColumnName="taskid" />
+          <ScalarProperty Name="completed" ColumnName="completed" />
+          <ScalarProperty Name="duedate" ColumnName="duedate" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="week6capstone_tasklistModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
